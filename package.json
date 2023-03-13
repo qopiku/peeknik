@@ -1,0 +1,48 @@
+{
+  "name": "peeknik",
+  "version": "0.0.1",
+  "description": "Take a peek at the NIK details",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qopiku/peeknik.git"
+  },
+  "keywords": [
+    "nik",
+    "ktp",
+    "indonesia",
+    "nik-parser"
+  ],
+  "author": {
+    "name": "Suluh S",
+    "email": "suluhs@aol.com",
+    "url": "https://suluh.my.id"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/qopiku/peeknik/issues"
+  },
+  "homepage": "https://github.com/qopiku/peeknik#readme",
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": false,
+    "quoteProps": "consistent",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "printWidth": 100
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "rimraf": "^4.4.0"
+  }
+}
