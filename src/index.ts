@@ -33,11 +33,12 @@ const peeknik = (id: string | number) => {
   let date = Number(id.substring(6, 8))
   let year = id.substring(10, 12)
 
+  const unique = id.substring(12, 16)
+  const gender: 'M' | 'F' = date < 40 ? 'M' : 'F'
+
   date = date > 40 ? date - 40 : date
   year = Number(now) > Number(year) ? `20${year}` : `19${year}`
 
-  const unique = id.substring(12, 16)
-  const gender: 'M' | 'F' = date < 40 ? 'M' : 'F'
   const valid = id.length === 16 && !!province?.name && !!region?.name && !!district?.name
   const dob = new Date(Number(year), month, date)
 
